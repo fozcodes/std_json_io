@@ -10,15 +10,15 @@ defmodule StdJsonIo.Mixfile do
      name: "StdJsonIo",
      version: @version,
      package: package(),
-     elixir: "~> 1.1",
+     elixir: "~> 1.4",
      source_url: @url,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      maintainers: @maintainers,
      description: "Application for managing and communicating with IO servers via JSON",
      homepage_url: @url,
-     docs: docs,
-     deps: deps]
+     docs: docs(),
+     deps: deps()]
   end
 
   def application do
@@ -38,9 +38,9 @@ defmodule StdJsonIo.Mixfile do
 
   defp deps do
     [
-      {:porcelain, "~> 2.0"},
+      {:porcelain, "~> 2.0.3"},
       {:poolboy, "~> 1.5.1"},
-      {:poison, "~> 1.5.0"},
+      {:poison, "~> 2.2"},
       {:fs, "~> 0.9.1"},
     ]
   end
