@@ -1,7 +1,7 @@
 defmodule StdJsonIo.Mixfile do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
   @url "https://github.com/hassox/std_json_io"
   @maintainers ["Daniel Neighman"]
 
@@ -40,7 +40,7 @@ defmodule StdJsonIo.Mixfile do
     [
       {:porcelain, "~> 2.0.3"},
       {:poolboy, "~> 1.5.1"},
-      {:poison, "~> 2.2"},
+      {:poison, "~> 3.1"},
       {:fs, "~> 0.9.1"},
     ]
   end
